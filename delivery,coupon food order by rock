@@ -1,0 +1,15 @@
+d,c=map(int,input().split())
+a1,a2,a3=map(int,input().split())
+b1,b2,b3=map(int,input().split())
+day1=a1+a2+a3
+days2=b1+b2+b3
+with_coupon=day1+day2+coupon
+if day1<150:
+  with_coupon += d
+ if day2<150:
+  with_coupon += d
+ wihout_coupon=day1+day2+day3+2*d
+ if with_coupon < without+coupon:
+  print("YES")
+ else:
+  print("NO")
